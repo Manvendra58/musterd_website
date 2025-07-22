@@ -355,7 +355,7 @@ mobileAboutUsToggle.addEventListener('click', function() {
                     btn.disabled = true;
                     btn.textContent = 'Sending...';
                     try {
-                        const res = await fetch('http://localhost:5000/api/contact', {
+                        const res = await fetch('https://musterd-website.vercel.app/api/contact', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(data)
@@ -468,7 +468,7 @@ mobileAboutUsToggle.addEventListener('click', function() {
                 }
                 subscribeBtn.disabled = true;
                 try {
-                    const res = await fetch('http://localhost:5000/api/subscribe', {
+                    const res = await fetch('https://musterd-website.vercel.app/api/subscribe', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ email })
